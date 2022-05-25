@@ -1,0 +1,26 @@
+﻿<Window x:Class="ActualPriceOfCryptocurrency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActualPriceOfCryptocurrency"
+        mc:Ignorable="d"
+        Icon="D:\Visual Studio\repos\ActualPriceOfCryptocurrency\res\logo.ico"
+        Title="Price" Height="362" Width="188">
+    <Grid HorizontalAlignment="Center" Width="188" Margin="0,0,0,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF8E42B3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="OutputTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="OutputTextBox_TextChanged" Height="256" Grid.ColumnSpan="3" FontSize="14" Background="{x:Null}" Foreground="White"/>
+        <Button x:Name="UpdateButton" Content="Обновить&#xD;&#xA;" HorizontalAlignment="Left" Margin="0,256,0,0" VerticalAlignment="Top" Click="UpdateButton_Click" Height="125" Width="188" Grid.ColumnSpan="3" Background="{x:Null}"/>
+
+    </Grid>
+</Window>
